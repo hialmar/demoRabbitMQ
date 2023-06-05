@@ -5,7 +5,7 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.DeliverCallback;
 
-public class SubDirect {
+public class SubDirectAll {
 
     private static final String EXCHANGE_NAME = "direct_logs";
 
@@ -18,11 +18,10 @@ public class SubDirect {
         channel.exchangeDeclare(EXCHANGE_NAME, "direct");
         String queueName = channel.queueDeclare().getQueue();
 
-        String severities [] = { "info", "warning"};
+        channel.queueBind(queueName, EXCHANGE_NAME, "error");
+        channel.queueBind(queueName, EXCHANGE_NAME, "warning");
+        channel.queueBind(queueName, EXCHANGE_NAME, "info");
 
-        for (String severity : severities) {
-            channel.queueBind(queueName, EXCHANGE_NAME, severity);
-        }
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {

@@ -1,0 +1,1 @@
+/usr/local/homebrew/Cellar/rabbitmq/3.11.3/sbin
