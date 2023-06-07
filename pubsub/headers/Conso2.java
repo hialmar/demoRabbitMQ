@@ -1,4 +1,4 @@
-package pubsub.exchange;
+package pubsub.headers;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -7,7 +7,7 @@ import com.rabbitmq.client.DeliverCallback;
 
 import java.util.HashMap;
 
-public class Conso1 {
+public class Conso2 {
 
     private static final String EXCHANGE_NAME = "logs_headers";
 
@@ -21,7 +21,7 @@ public class Conso1 {
         String queueName = channel.queueDeclare().getQueue();
         HashMap map = new HashMap<String,Object>();
         map.put("x-match","any");
-        map.put("First","A");
+        map.put("Third","C");
         map.put("Fourth","D");
         channel.queueBind(queueName, EXCHANGE_NAME, "", map);
 

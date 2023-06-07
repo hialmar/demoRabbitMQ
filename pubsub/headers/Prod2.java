@@ -1,4 +1,4 @@
-package pubsub.exchange;
+package pubsub.headers;
 
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;

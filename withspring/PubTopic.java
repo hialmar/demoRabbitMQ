@@ -30,6 +30,17 @@ public class PubTopic {
             channel.basicPublish(EXCHANGE_NAME, "foo.bar.baz", props, message.getBytes("UTF-8"));
 
             System.out.println("Sent message "+ message);
+
+            channel.exchangeDeclare("auto.headers", "headers", true, true, null);
+
+            props = new AMQP.BasicProperties();
+            map = new HashMap<String,Object>();
+            map.put("thing1","somevalue");
+            map.put("thing2","someothervalue");
+            props = props.builder().headers(map).build();
+            channel.basicPublish("auto.headers", "", props, message.getBytes("UTF-8"));
+
+            System.out.println("Sent message "+ message);
         }
     }
 }
