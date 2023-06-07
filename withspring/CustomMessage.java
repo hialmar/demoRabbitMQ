@@ -1,9 +1,9 @@
 package withspring;
 
 public class CustomMessage {
-    String text;
-    int priority;
-    boolean secret;
+    private String text;
+    private int priority;
+    private boolean secret;
 
     public CustomMessage() {
     }
