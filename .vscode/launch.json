@@ -1,0 +1,182 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Receiver",
+            "request": "launch",
+            "mainClass": "objects.Receiver",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Sender",
+            "request": "launch",
+            "mainClass": "objects.Sender",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Receiver(1)",
+            "request": "launch",
+            "mainClass": "prodconso.Receiver",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Sender(1)",
+            "request": "launch",
+            "mainClass": "prodconso.Sender",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "PubDirect",
+            "request": "launch",
+            "mainClass": "pubsub.direct.PubDirect",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubDirectAll",
+            "request": "launch",
+            "mainClass": "pubsub.direct.SubDirectAll",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubDirectError",
+            "request": "launch",
+            "mainClass": "pubsub.direct.SubDirectError",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubDirectWarning",
+            "request": "launch",
+            "mainClass": "pubsub.direct.SubDirectWarning",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "PubSimple",
+            "request": "launch",
+            "mainClass": "pubsub.fanout.PubSimple",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubSimple",
+            "request": "launch",
+            "mainClass": "pubsub.fanout.SubSimple",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Conso1",
+            "request": "launch",
+            "mainClass": "pubsub.headers.Conso1",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Conso2",
+            "request": "launch",
+            "mainClass": "pubsub.headers.Conso2",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Conso3",
+            "request": "launch",
+            "mainClass": "pubsub.headers.Conso3",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Prod1",
+            "request": "launch",
+            "mainClass": "pubsub.headers.Prod1",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "Prod2",
+            "request": "launch",
+            "mainClass": "pubsub.headers.Prod2",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "PubTopic",
+            "request": "launch",
+            "mainClass": "pubsub.topic.PubTopic",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubTopicAll",
+            "request": "launch",
+            "mainClass": "pubsub.topic.SubTopicAll",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubTopicDirect",
+            "request": "launch",
+            "mainClass": "pubsub.topic.SubTopicDirect",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubTopicHash",
+            "request": "launch",
+            "mainClass": "pubsub.topic.SubTopicHash",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubTopicStars",
+            "request": "launch",
+            "mainClass": "pubsub.topic.SubTopicStars",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "RPCClient",
+            "request": "launch",
+            "mainClass": "rpc.RPCClient",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "RPCServer",
+            "request": "launch",
+            "mainClass": "rpc.RPCServer",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "PubTopic(1)",
+            "request": "launch",
+            "mainClass": "withspring.PubTopic",
+            "projectName": "demoRabbitMQ_70376523"
+        },
+        {
+            "type": "java",
+            "name": "SubTopicAll(1)",
+            "request": "launch",
+            "mainClass": "withspring.SubTopicAll",
+            "projectName": "demoRabbitMQ_70376523"
+        }
+    ]
+}
